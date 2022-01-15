@@ -15,19 +15,20 @@ public class SimpleCalculator extends JFrame {
 		this.setTitle("SimpleCalculator");
 
 		this.container.add(panel, BorderLayout.CENTER);
-		
+
 		// フレームのサイズ変更管理
 //		this.setResizable(false);
-		
+
 		// フレームのサイズ指定
 		this.setBounds(0, 0, 250, 250);
 		this.setVisible(true);
-		
+
+		// 部品の幅を5
+		this.panel.layout(5);
+		this.validate();
+
 		// フレームを最前面に表示する
 		this.setAlwaysOnTop(true);
-		
-		
-
 	}
 
 	public static void main(String[] args) {
